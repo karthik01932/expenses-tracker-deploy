@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Expense Tracker</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            background-color:  #080515;
+        }
+
+        .form{
+            font-size:x-large;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 500px;
+            background: linear-gradient(90deg, #cfee45, #63dba3);	
+            color: rgb(6, 18, 28);
+            margin:0 400px;
+
+        }
+        .form input{
+            border-radius: 8px;
+        }
+        .header{
+            color: white;
+            text-align: center;
+            text-shadow: #C7C5F4;
+            font-weight: bold;
+            
+        }
+        .submit{
+            background: #fff;
+            font-size: 18px;
+            margin-top: 30px;
+            padding: 16px 20px;
+            border-radius: 26px;
+            border: 1px solid #D4D3E8;
+            text-transform: uppercase;
+            font-weight: 700;
+            align-items: center;
+            width: 100%;
+            color: #40b0cf;
+            box-shadow: 0px 2px 2px #5C5696;
+            cursor: pointer;
+            transition: .2s;
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;	
+            color: rgb(37, 119, 192);
+        }
+        .link{
+            color: rgb(73, 23, 201);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Expense Tracker</h1>
+    <div class="form">
+    <form id="form" onsubmit="signup(event)">
+        <label for ="name">Enter Name:</label><br>
+        <input name="name" type="text" id="name" autocomplete="name"><br>
+        <label for ="email">Enter Email:</label><br>
+        <input name="email" type="text" id="email" autocomplete="email"><br>
+        <label for ="password">Enter Password:</label><br>
+        <input name="password" type="password" id="password" autocomplete="off"><br>
+        <input class= "submit" type="submit" id="btn" value="submit" ><br>
+    </form>
+</div>
+<div class ='links'>
+    <a class="link" href='./login.html'>Existing User- Login</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
+
+    <script src="./signup.js"></script>
+
+    </body>
+    </html>
