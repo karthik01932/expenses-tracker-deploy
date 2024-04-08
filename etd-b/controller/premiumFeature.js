@@ -18,6 +18,7 @@ const getUserLeaderBoard = async (req, res) => {
 }
 }
 
+
 module.exports = {
     getUserLeaderBoard
 }
